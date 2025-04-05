@@ -1,0 +1,14 @@
+{
+  "parent": "flowerseeds:block/cross_stage1",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "cross": "minecraft:block/red_tulip"
+  },
+  "transform": {
+    "translation": [
+      0.23,
+      -0.06,
+      -0.23
+    ]
+  }
+}

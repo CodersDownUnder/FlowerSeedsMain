@@ -1,0 +1,8 @@
+JVM Args:          
+Run Args:          "--client", "/home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/stripClient/output.jar", "--server", "/home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/stripServer/output.jar", "--ann", "1.20.4", "--output", "/home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/merge/output.jar", "--inject", "false"
+JVM:               /usr/lib/jvm/java-17-jetbrains/bin/java
+Classpath:         /home/trhod17/.gradle/caches/modules-2/files-2.1/net.neoforged/mergetool/2.0.2/f65ce45660841dcf1a58363fdcef0dab4d5a26c8/mergetool-2.0.2-fatjar.jar
+Working Dir:       /home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/merge
+Main Class:        net.neoforged.mergetool.ConsoleMerger
+Program log file:  /home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/merge/log.log
+Output file:       /home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/merge/output.jar

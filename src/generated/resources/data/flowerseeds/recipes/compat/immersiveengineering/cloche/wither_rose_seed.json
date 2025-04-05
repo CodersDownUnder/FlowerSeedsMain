@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "flowerseeds:wither_rose_seed"
+  },
+  "render": {
+    "type": "crop",
+    "block": "flowerseeds:wither_rose_seed"
+  },
+  "results": [
+    {
+      "item": "minecraft:wither_rose"
+    },
+    {
+      "item": "flowerseeds:wither_rose_seed"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:soul_sand"
+  },
+  "time": 240
+}

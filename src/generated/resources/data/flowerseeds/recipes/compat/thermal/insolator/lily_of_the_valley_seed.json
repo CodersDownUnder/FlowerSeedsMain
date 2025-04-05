@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "flowerseeds:lily_of_the_valley_seed"
+  },
+  "output": [
+    {
+      "chance": 4.0,
+      "count": 2,
+      "item": "minecraft:lily_of_the_valley"
+    },
+    {
+      "chance": 2.0,
+      "item": "flowerseeds:lily_of_the_valley_seed"
+    }
+  ]
+}

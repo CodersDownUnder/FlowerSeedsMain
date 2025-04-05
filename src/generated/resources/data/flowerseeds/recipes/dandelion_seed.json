@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:dandelion"
+    },
+    {
+      "tag": "forge:seeds"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "flowerseeds:dandelion_seed"
+  }
+}

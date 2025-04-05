@@ -1,0 +1,23 @@
+{
+  "overlays": {
+    "entries": [
+      {
+        "directory": "pack_overlays_test",
+        "formats": [
+          0,
+          2147483647
+        ]
+      }
+    ]
+  },
+  "pack": {
+    "description": {
+      "translate": "flowerseeds.packmeta.description"
+    },
+    "pack_format": 22,
+    "supported_formats": [
+      0,
+      2147483647
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+JVM Args:          
+Run Args:          "--inJar", "/home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/rename/output.jar", "--outJar", "/home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/applyForgesAccessTransformer/output.jar", "--atFile", "/home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/accesstransformers/Forges/_script_neoforge.cfg", "--atFile", "/home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/accesstransformers/Forges/accesstransformer.cfg"
+JVM:               /usr/lib/jvm/java-17-jetbrains/bin/java
+Classpath:         /home/trhod17/.gradle/caches/modules-2/files-2.1/net.minecraftforge/accesstransformers/8.0.7/4cba12b2b7087c94f754f7fc09a94d931a865182/accesstransformers-8.0.7-fatjar.jar
+Working Dir:       /home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/applyForgesAccessTransformer
+Main Class:        net.minecraftforge.accesstransformer.TransformerProcessor
+Program log file:  /home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/applyForgesAccessTransformer/log.log
+Output file:       /home/trhod17/Desktop/modding/1.21/flowerseeds2/modules/flowerseeds/build/neoForm/neoFormJoined1.20.4-20231207.154220/steps/applyForgesAccessTransformer/output.jar

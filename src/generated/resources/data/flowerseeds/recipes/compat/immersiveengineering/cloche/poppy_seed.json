@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "flowerseeds:poppy_seed"
+  },
+  "render": {
+    "type": "crop",
+    "block": "flowerseeds:poppy_seed"
+  },
+  "results": [
+    {
+      "item": "minecraft:poppy"
+    },
+    {
+      "item": "flowerseeds:poppy_seed"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 240
+}

@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "categories": [
+    "soul_sand",
+    "netherrack",
+    "dirt",
+    "farmland"
+  ],
+  "display": {
+    "type": "botanypots:aging",
+    "block": "flowerseeds:wither_rose_seed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "minecraft:wither_rose"
+      }
+    },
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "flowerseeds:wither_rose_seed"
+      }
+    }
+  ],
+  "growthTicks": 1200,
+  "seed": {
+    "item": "flowerseeds:wither_rose_seed"
+  }
+}

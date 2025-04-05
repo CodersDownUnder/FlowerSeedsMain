@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "thermal"
+    }
+  ],
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "flowerseeds:orange_tulip_seed"
+  },
+  "output": [
+    {
+      "chance": 4.0,
+      "count": 2,
+      "item": "minecraft:orange_tulip"
+    },
+    {
+      "chance": 2.0,
+      "item": "flowerseeds:orange_tulip_seed"
+    }
+  ]
+}

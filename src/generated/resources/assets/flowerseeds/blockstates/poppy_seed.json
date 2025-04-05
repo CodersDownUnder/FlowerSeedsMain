@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "flowerseeds:block/dandelion_seed_stage0"
+    },
+    "age=1": {
+      "model": "flowerseeds:block/dandelion_seed_stage0"
+    },
+    "age=2": {
+      "model": "flowerseeds:block/dandelion_seed_stage1"
+    },
+    "age=3": {
+      "model": "flowerseeds:block/dandelion_seed_stage1"
+    },
+    "age=4": {
+      "model": "flowerseeds:block/dandelion_seed_stage1"
+    },
+    "age=5": {
+      "model": "flowerseeds:block/dandelion_seed_stage2"
+    },
+    "age=6": {
+      "model": "flowerseeds:block/poppy_seed_stage3"
+    },
+    "age=7": {
+      "model": "flowerseeds:block/poppy_seed_stage3"
+    }
+  }
+}

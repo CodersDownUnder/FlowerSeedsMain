@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:wither_rose"
+    },
+    {
+      "tag": "forge:seeds"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "flowerseeds:wither_rose_seed"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "display": {
+    "type": "botanypots:aging",
+    "block": "flowerseeds:poppy_seed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "minecraft:poppy"
+      }
+    },
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "flowerseeds:poppy_seed"
+      }
+    }
+  ],
+  "growthTicks": 1400,
+  "seed": {
+    "item": "flowerseeds:poppy_seed"
+  }
+}

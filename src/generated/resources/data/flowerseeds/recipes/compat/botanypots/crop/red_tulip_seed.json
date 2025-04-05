@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botanypots"
+    }
+  ],
+  "type": "botanypots:crop",
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "display": {
+    "type": "botanypots:aging",
+    "block": "flowerseeds:red_tulip_seed"
+  },
+  "drops": [
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "minecraft:red_tulip"
+      }
+    },
+    {
+      "chance": 1.0,
+      "output": {
+        "item": "flowerseeds:red_tulip_seed"
+      }
+    }
+  ],
+  "growthTicks": 1400,
+  "seed": {
+    "item": "flowerseeds:red_tulip_seed"
+  }
+}

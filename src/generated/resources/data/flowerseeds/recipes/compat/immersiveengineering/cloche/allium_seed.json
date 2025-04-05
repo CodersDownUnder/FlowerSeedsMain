@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "flowerseeds:allium_seed"
+  },
+  "render": {
+    "type": "crop",
+    "block": "flowerseeds:allium_seed"
+  },
+  "results": [
+    {
+      "item": "minecraft:allium"
+    },
+    {
+      "item": "flowerseeds:allium_seed"
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 240
+}

@@ -1,0 +1,70 @@
+{
+  "children": {
+    "flower0": {
+      "parent": "flowerseeds:block/cross_stage0",
+      "render_type": "minecraft:cutout_mipped",
+      "textures": {
+        "cross": "minecraft:block/wither_rose"
+      },
+      "transform": {
+        "translation": [
+          0.23,
+          -0.06,
+          0.23
+        ]
+      }
+    },
+    "flower1": {
+      "parent": "flowerseeds:block/cross_stage0",
+      "render_type": "minecraft:cutout_mipped",
+      "textures": {
+        "cross": "minecraft:block/wither_rose"
+      },
+      "transform": {
+        "translation": [
+          -0.23,
+          -0.06,
+          0.23
+        ]
+      }
+    },
+    "flower2": {
+      "parent": "flowerseeds:block/cross_stage0",
+      "render_type": "minecraft:cutout_mipped",
+      "textures": {
+        "cross": "minecraft:block/wither_rose"
+      },
+      "transform": {
+        "translation": [
+          -0.23,
+          -0.06,
+          -0.23
+        ]
+      }
+    },
+    "flower3": {
+      "parent": "flowerseeds:block/cross_stage0",
+      "render_type": "minecraft:cutout_mipped",
+      "textures": {
+        "cross": "minecraft:block/wither_rose"
+      },
+      "transform": {
+        "translation": [
+          0.23,
+          -0.06,
+          -0.23
+        ]
+      }
+    }
+  },
+  "item_render_order": [
+    "flower0",
+    "flower1",
+    "flower2",
+    "flower3"
+  ],
+  "loader": "neoforge:composite",
+  "textures": {
+    "particle": "minecraft:block/wither_rose"
+  }
+}

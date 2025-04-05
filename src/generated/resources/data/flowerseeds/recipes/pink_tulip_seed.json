@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:pink_tulip"
+    },
+    {
+      "tag": "forge:seeds"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "flowerseeds:pink_tulip_seed"
+  }
+}

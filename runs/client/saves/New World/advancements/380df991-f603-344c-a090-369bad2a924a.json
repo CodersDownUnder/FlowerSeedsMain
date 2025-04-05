@@ -1,0 +1,39 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-08-26 19:37:56 +1000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-08-26 19:37:59 +1000"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/white_dye": {
+    "criteria": {
+      "has_bone_meal": "2024-08-26 19:38:06 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bone_block": {
+    "criteria": {
+      "has_bone_meal": "2024-08-26 19:38:06 +1000"
+    },
+    "done": true
+  },
+  "flowerseeds:recipes/misc/allium_seed": {
+    "criteria": {
+      "has_allium": "2024-09-03 11:04:07 +1000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_allium": {
+    "criteria": {
+      "has_allium": "2024-09-03 11:04:07 +1000"
+    },
+    "done": true
+  },
+  "DataVersion": 3700
+}
