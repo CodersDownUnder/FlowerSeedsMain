@@ -1,0 +1,43 @@
+{
+  "values": {
+    "flowerseeds2:allium_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:azure_bluet_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:blue_orchid_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:cornflower_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:dandelion_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:lily_of_the_valley_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:orange_tulip_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:oxeye_daisy_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:pink_tulip_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:poppy_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:red_tulip_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:white_tulip_crop": {
+      "chance": 0.3
+    },
+    "flowerseeds2:wither_rose_crop": {
+      "chance": 0.3
+    }
+  }
+}

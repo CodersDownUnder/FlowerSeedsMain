@@ -1,0 +1,6 @@
+// 1.21.4	2025-04-11T17:53:47.274836497	Tags for minecraft:block mod id flowerseeds2
+3c4bb95be30431a3a936ead5dbd1079073e30fdf data/minecraft/tags/block/bee_growables.json
+3c4bb95be30431a3a936ead5dbd1079073e30fdf data/minecraft/tags/block/crops.json
+3c4bb95be30431a3a936ead5dbd1079073e30fdf data/minecraft/tags/block/maintains_farmland.json
+3c4bb95be30431a3a936ead5dbd1079073e30fdf data/minecraft/tags/block/mineable/axe.json
+3c4bb95be30431a3a936ead5dbd1079073e30fdf data/minecraft/tags/block/small_flowers.json
