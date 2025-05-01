@@ -1,5 +1,6 @@
 package net.codersdownunder.flowerseeds2;
 
+import net.codersdownunder.flowerseeds2.blocks.GenericFlowerCropBlock;
 import net.codersdownunder.flowerseeds2.init.CropRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -87,11 +89,16 @@ public class FlowerSeeds2
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
+
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void registerItemColor(RegisterColorHandlersEvent.Item event) {
+
+            for (DeferredHolder<Block, ? extends Block> block : CropRegistries.BLOCKS.getEntries()) {
+                GenericFlowerCropBlock item = (GenericFlowerCropBlock) block.get();
+                event.register(item.getColour().get(), item.asItem());
+            }
         }
+
     }
 }

@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:poppy",
-    "#c:seeds"
+    {
+      "item": "minecraft:poppy"
+    },
+    {
+      "tag": "c:seeds"
+    }
   ],
   "result": {
     "count": 2,

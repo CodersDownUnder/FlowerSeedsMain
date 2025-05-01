@@ -1,5 +1,6 @@
 package net.codersdownunder.flowerseeds2.util;
 
+import net.minecraft.client.color.item.ItemColor;
 
 public enum SeedColour {
     RED(0xB02E26),
@@ -26,9 +27,9 @@ public enum SeedColour {
         this.colour = colour;
     }
 
-    public int get() {
+    public ItemColor get() {
 
-        return colour;
+        return (stack, tintIndex) -> colour;
     }
 
 }

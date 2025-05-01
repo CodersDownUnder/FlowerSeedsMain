@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:blue_orchid",
-    "#c:seeds"
+    {
+      "item": "minecraft:blue_orchid"
+    },
+    {
+      "tag": "c:seeds"
+    }
   ],
   "result": {
     "count": 2,

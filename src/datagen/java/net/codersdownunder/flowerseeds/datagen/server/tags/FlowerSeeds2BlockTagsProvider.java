@@ -7,13 +7,14 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.concurrent.CompletableFuture;
 
 public class FlowerSeeds2BlockTagsProvider extends BlockTagsProvider {
     // Get parameters from one of the `GatherDataEvent`s.
-    public FlowerSeeds2BlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        super(output, lookupProvider, FlowerSeeds2.MODID);
+    public FlowerSeeds2BlockTagsProvider(PackOutput output, ExistingFileHelper ext, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, lookupProvider, FlowerSeeds2.MODID, ext);
     }
 
     // Add your tag entries here.

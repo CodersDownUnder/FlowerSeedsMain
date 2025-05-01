@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:oxeye_daisy",
-    "#c:seeds"
+    {
+      "item": "minecraft:oxeye_daisy"
+    },
+    {
+      "tag": "c:seeds"
+    }
   ],
   "result": {
     "count": 2,

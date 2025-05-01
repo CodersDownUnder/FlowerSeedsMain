@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:dandelion",
-    "#c:seeds"
+    {
+      "item": "minecraft:dandelion"
+    },
+    {
+      "tag": "c:seeds"
+    }
   ],
   "result": {
     "count": 2,

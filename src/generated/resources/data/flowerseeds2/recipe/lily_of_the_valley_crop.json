@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:lily_of_the_valley",
-    "#c:seeds"
+    {
+      "item": "minecraft:lily_of_the_valley"
+    },
+    {
+      "tag": "c:seeds"
+    }
   ],
   "result": {
     "count": 2,

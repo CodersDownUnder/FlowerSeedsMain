@@ -1,0 +1,59 @@
+{
+  "children": {
+    "flower0": {
+      "parent": "minecraft:block/white_tulip",
+      "render_type": "minecraft:cutout_mipped",
+      "transform": {
+        "translation": [
+          0.23,
+          -0.06,
+          0.23
+        ]
+      }
+    },
+    "flower1": {
+      "parent": "minecraft:block/white_tulip",
+      "render_type": "minecraft:cutout_mipped",
+      "transform": {
+        "translation": [
+          -0.23,
+          -0.06,
+          0.23
+        ]
+      }
+    },
+    "flower2": {
+      "parent": "minecraft:block/white_tulip",
+      "render_type": "minecraft:cutout_mipped",
+      "transform": {
+        "translation": [
+          -0.23,
+          -0.06,
+          -0.23
+        ]
+      }
+    },
+    "flower3": {
+      "parent": "minecraft:block/white_tulip",
+      "render_type": "minecraft:cutout_mipped",
+      "transform": {
+        "translation": [
+          0.23,
+          -0.06,
+          -0.23
+        ]
+      }
+    }
+  },
+  "item_render_order": [
+    "flower0",
+    "flower1",
+    "flower2",
+    "flower3"
+  ],
+  "loader": "neoforge:composite",
+  "textures": {
+    "cross": "minecraft:block/white_tulip",
+    "particle": "minecraft:block/white_tulip"
+  }
+}

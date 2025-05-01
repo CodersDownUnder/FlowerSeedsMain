@@ -1,0 +1,14 @@
+{
+  "parent": "flowerseeds2:block/cross_stage1",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "cross": "minecraft:block/lily_of_the_valley"
+  },
+  "transform": {
+    "translation": [
+      0.23,
+      -0.06,
+      -0.23
+    ]
+  }
+}

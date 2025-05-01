@@ -39,11 +39,19 @@ public class GenericFlowerCropBlock extends CropBlock implements SpecialPlantabl
             Block.box(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)
     };
 
-    public GenericFlowerCropBlock(Properties pProperties) {
+    private SeedColour colour;
+
+    public GenericFlowerCropBlock(Properties pProperties, SeedColour colour) {
 
         super(pProperties);
-        //this.colour = colour;
+        this.colour = colour;
     }
+
+    public SeedColour getColour() {
+
+        return colour;
+    }
+
 
     @Override
     public void appendHoverText(ItemStack p_49816_, Item.TooltipContext p_339606_, List<Component> list, TooltipFlag p_49819_) {
@@ -65,7 +73,7 @@ public class GenericFlowerCropBlock extends CropBlock implements SpecialPlantabl
     }
 
     @Override
-    protected @NotNull ItemStack getCloneItemStack(LevelReader p_304482_, BlockPos p_52255_, BlockState p_52256_, boolean p_387989_) {
+    public ItemStack getCloneItemStack(LevelReader p_304482_, BlockPos p_52255_, BlockState p_52256_) {
 
         return this.asItem().getDefaultInstance();
     }

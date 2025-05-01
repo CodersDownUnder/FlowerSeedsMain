@@ -14,7 +14,7 @@
     "description": {
       "translate": "flowerseeds2.packmeta.description"
     },
-    "pack_format": 46,
+    "pack_format": 34,
     "supported_formats": [
       0,
       2147483647

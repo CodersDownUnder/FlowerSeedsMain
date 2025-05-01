@@ -10,13 +10,15 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.concurrent.CompletableFuture;
 
 public class FlowerSeeds2ItemTagsProvider extends ItemTagsProvider {
     // Get parameters from one of the `GatherDataEvent`s.
-    public FlowerSeeds2ItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> p_275322_) {
-        super(output, lookupProvider, p_275322_, FlowerSeeds2.MODID);
+    public FlowerSeeds2ItemTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> block, ExistingFileHelper ext) {
+
+        super(output, lookupProvider, block, FlowerSeeds2.MODID, ext);
     }
 
     // Add your tag entries here.

@@ -1,6 +1,7 @@
 package net.codersdownunder.flowerseeds.datagen;
 
 import net.codersdownunder.flowerseeds.datagen.client.lang.EN_US;
+import net.codersdownunder.flowerseeds.datagen.client.models.FlowerSeeds2ItemModelProvider;
 import net.codersdownunder.flowerseeds.datagen.client.models.FlowerSeeds2ModelProvider;
 import net.codersdownunder.flowerseeds.datagen.server.datamaps.FlowerSeeds2DataMapProvider;
 import net.codersdownunder.flowerseeds.datagen.server.loot.FlowerSeeds2LootProvider;
@@ -22,6 +23,8 @@ import net.minecraft.util.InclusiveRange;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.List;
@@ -33,11 +36,11 @@ import java.util.concurrent.CompletableFuture;
 public class DataGenerators {
 
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent.Client event) {
+    public static void gatherData(GatherDataEvent event) {
 
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
-        //ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(true, new PackMetadataGenerator(packOutput)
@@ -51,7 +54,7 @@ public class DataGenerators {
         /*
             Lang files Start
          */
-        generator.addProvider(true, new EN_US(packOutput));
+        generator.addProvider(event.includeClient(), new EN_US(packOutput));
 
         /*
             Lang files end
@@ -60,8 +63,9 @@ public class DataGenerators {
         /*
         Models Start
          */
-
-        generator.addProvider(true, new FlowerSeeds2ModelProvider(packOutput));
+        generator.addProvider(event.includeClient(), new FlowerSeeds2ModelProvider(packOutput, FlowerSeeds2.MODID, existingFileHelper));
+        ItemModelProvider itemModels = new FlowerSeeds2ItemModelProvider(packOutput, FlowerSeeds2.MODID, event.getExistingFileHelper());
+        generator.addProvider(event.includeClient(), itemModels);
 
         /*
         Models End
@@ -71,8 +75,8 @@ public class DataGenerators {
         Tags Start
          */
         FlowerSeeds2BlockTagsProvider blockTagGenerator = generator.addProvider(true,
-                new FlowerSeeds2BlockTagsProvider(packOutput, lookupProvider));
-        generator.addProvider(true, new FlowerSeeds2ItemTagsProvider(packOutput, lookupProvider, blockTagGenerator.contentsGetter()));
+                new FlowerSeeds2BlockTagsProvider(packOutput, existingFileHelper, lookupProvider));
+        generator.addProvider(event.includeServer(), new FlowerSeeds2ItemTagsProvider(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
         /*
         Tags End
          */
@@ -80,7 +84,7 @@ public class DataGenerators {
         /*
         DataMaps Start
          */
-        generator.addProvider(true, new FlowerSeeds2DataMapProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new FlowerSeeds2DataMapProvider(packOutput, lookupProvider));
         /*
         DataMaps End
          */
@@ -89,7 +93,7 @@ public class DataGenerators {
         Loot Tables Start
          */
 
-        generator.addProvider(true, new FlowerSeeds2LootProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new FlowerSeeds2LootProvider(packOutput, lookupProvider));
 
         /*
         Loot Tables End
@@ -98,7 +102,7 @@ public class DataGenerators {
         /*
         Recipes Start
          */
-        generator.addProvider(true, new FlowerSeeds2RecipeProvider.Runner(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new FlowerSeeds2RecipeProvider(packOutput, lookupProvider));
         /*
         Recipes End
          */
