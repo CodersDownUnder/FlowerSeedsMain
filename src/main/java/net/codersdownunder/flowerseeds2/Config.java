@@ -18,7 +18,7 @@ public class Config {
 
     private static final ModConfigSpec.IntValue WITHER_ROSE_TRADE_LEVEL = BUILDER
             .comment("Wither Rose Farmer Trade Level")
-            .defineInRange("witherrosettradelevel", 5, 1, 5);
+            .defineInRange("witherrosetradelevel", 5, 1, 5);
 
     private static final ModConfigSpec.BooleanValue WITHER_ROSE_TRADING_CLERIC = BUILDER
             .comment("Allow Wither Rose seeds to be obtainable from master Clerics?")
@@ -26,7 +26,7 @@ public class Config {
 
     private static final ModConfigSpec.IntValue WITHER_ROSE_TRADE_LEVEL_CLERIC = BUILDER
             .comment("Wither Rose Cleric Trade Level")
-            .defineInRange("witherrosettradelevelcleric", 5, 1, 5);
+            .defineInRange("witherrosetradelevelcleric", 5, 1, 5);
 
     static final ModConfigSpec SPEC = BUILDER.build();
 
