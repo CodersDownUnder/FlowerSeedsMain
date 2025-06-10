@@ -56,7 +56,7 @@ public class GenericFlowerCropBlock extends CropBlock implements SpecialPlantabl
     @Override
     public void appendHoverText(ItemStack p_49816_, Item.TooltipContext p_339606_, List<Component> list, TooltipFlag p_49819_) {
 
-        if (ModList.get().isLoaded("flowerseedsaether") && this.getDescriptionId().contains("flowerseedsaether")) {
+        if (ModList.get().isLoaded("flowerseeds2aether") && this.getDescriptionId().contains("flowerseeds2aether")) {
             list.add(Component.translatable("tooltip.aetherseed").setStyle(Style.EMPTY.withColor(ChatFormatting.BLUE)));
             return;
         }

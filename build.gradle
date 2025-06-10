@@ -216,7 +216,7 @@ publisher {
     // For example: markdown.md, or "This is my changelog"
     // Or: https://raw.githubusercontent.com/hypherionmc/changelogs/changelog.md
     // Or https://gist.githubusercontent.com/hypherionmc/92f825d3c9337964cc77c9c8c9bf65e6/raw/ceeaaee5b98c688a23398864fe480b84796a1651/test_gist.md
-    setChangelog("https://gist.githubusercontent.com/Trhod17/01dd099755009a541b5af430eb698268/raw/e0bf727d68dfd7b8629c8d9d9bf2e2b1713a7dfa/flowerseeds2changelog.md")
+    setChangelog("https://gist.githubusercontent.com/Trhod17/01dd099755009a541b5af430eb698268/raw/c856b4e2fa5d1195a721ccd32eaef3c23783c7d0/flowerseeds2changelog.md")
 
     // Required for Modrinth/GitHub
     setProjectVersion("${minecraft_version}-${project.version}")
